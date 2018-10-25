@@ -1,0 +1,14 @@
+<div style="direction:rtl;margin:200px auto;width:400px">
+    <form name="departmentForm" ng-controller="departmentedit" ng-show="loaded" ng-submit="save(department)">
+        <div>
+            <span>ID:</span>
+            <input ng-model="department.id" ng-readonly />
+        </div>
+        <div>
+            <span>نام دپارتمان :</span>
+            <input ng-model="department.name" />
+        </div>
+        <hr />
+        <div style="text-align:center" ><input type="submit" value="ذخیره" /></div>
+    </form>
+</div>
