@@ -1,0 +1,3 @@
+{
+	javascript : ['~/App_Plugins/hnfirstpack/factory.js','~/App_Plugins/hnfirstpack/controller.js']
+}
