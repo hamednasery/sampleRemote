@@ -1,0 +1,49 @@
+﻿
+<umb-editor-view>
+    <umb-editor-header hideAlias="true" description="" descriptionLocked="true" nameLocked="true" name="دانشجو الف" icon="">
+
+    </umb-editor-header>
+    <umb-editor-container>
+        <umb-editor-sub-header>
+
+            <umb-editor-sub-header-content-left>
+              محتوای ساب چپ
+            </umb-editor-sub-header-content-left>
+
+            <umb-editor-sub-header-content-right>
+                محتوای ساب راست
+            </umb-editor-sub-header-content-right>
+
+        </umb-editor-sub-header>
+
+
+        <div class="control-group umb-control-group" ng-class="{hidelabel:property.hideLabel}">
+
+            <div ng-show="" class="alert alert-error property-error ng-binding" property="property" style="display: none;"></div>
+                        
+            <div>
+                <label class="control-label ng-binding" ng-hide="property.hideLabel" for="hnName" ng-attr-title="{{propertyAlias}}" title="hnName">
+                    hnName
+                    <!-- ngIf: property.validation.mandatory -->
+                    <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding">asdasdasd</small>
+                </label>
+
+                <div class="controls">
+                    <input type="text" name="textbox" ng-model="model.value" id="hnName" class="umb-editor umb-textstring textstring ng-pristine ng-valid ng-valid-required" val-server="value" ng-required="" ng-trim="false" ng-keyup="">
+                </div>
+            </div>
+               
+            
+        </div>
+
+    </umb-editor-container>
+    <umb-editor-footer>
+        <button type="button" class="btn umb-button__button btn-success umb-button--" ng-click="action(model)" hotkey="ctrl+p" hotkey-when-hidden="true" ng-disabled="">
+            <span >
+                <!-- ngIf: icon -->
+                <!-- ngIf: labelKey -->عملیات خاص
+                <!-- ngIf: !labelKey -->
+            </span>
+        </button>
+    </umb-editor-footer>
+</umb-editor-view>
